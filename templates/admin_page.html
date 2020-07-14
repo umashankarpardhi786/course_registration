@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+    <body>
+    <table align="center">
+        <tr>
+            <th class="b1">
+                <a href="{% url 'new_class' %}">
+                Schedule New Class
+                </a>
+            </th>
+
+            <th class="b1">
+                <button type="button" class="btn btn-dark">View All Schedule Classes</button>
+            </th>
+
+        </tr>
+        <tr>
+            <th colspan="2">
+                <img src="{% static 'images/reg2.png' %}" width="500" height="300">
+            </th>
+        </tr>
+    </table>
+    </body>
+</html>

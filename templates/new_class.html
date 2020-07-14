@@ -1,0 +1,56 @@
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container" align="center" style="width: 600px">
+            <form class="form-horizontal" role="form" action="{% url 'save_data' %}" method="post">
+                {% csrf_token %}
+                <h2 style="text-align: center;padding-left: 130px">Schedule New Course</h2>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Name</label>
+                    <div class="col-sm-9" style="padding: 5px">
+                        <input type="text" id="firstName" placeholder="Name" class="form-control" autofocus name="p1" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="col-sm-3 control-label">Faculty</label>
+                    <div class="col-sm-9" style="padding: 5px">
+                        <input type="text" id="Faculty" placeholder="Faculty" class="form-control" autofocus name="p2" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Date" class="col-sm-3 control-label">Date</label>
+                    <div class="col-sm-9" style="padding: 5px">
+                        <input type="date" id="Date" class="form-control" name="p3" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="default-picker" class="col-sm-3 control-label">Time </label>
+                    <div class="col-sm-9" style="padding: 5px">
+                        <input type="time" id="default-picker" class="form-control" placeholder="Select time" name="p4" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for="Fee" class="col-sm-3 control-label">Fee </label>
+                    <div class="col-sm-9" style="padding: 5px">
+                        <input type="number" id="Fee" placeholder="Fee" class="form-control" name="p5" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for="Duration" class="col-sm-3 control-label">Duration </label>
+                    <div class="col-sm-9" style="padding: 5px">
+                        <input type="number" id="Duration" placeholder="Duration" class="form-control" name="p6" required>
+                    </div>
+                </div>
+                <div style="text-align: center;width: 500px;padding-left: 150px">
+                    <button type="submit" class="btn btn-primary btn-block">Register</button>
+                </div>
+            </form> <!-- /form -->
+        </div> <!-- ./container -->
